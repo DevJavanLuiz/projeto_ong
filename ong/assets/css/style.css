@@ -10,6 +10,7 @@ html {
     margin: 0 auto;
     padding: 8rem;
     color: #1F3F3D;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,12 +21,15 @@ body {
     background-size: cover;
     min-height: 100vh;
 }
-h1{
+h1{ 
     font-size: 3.6rem;
+    
 }
-
+p{
+    font-size: 2rem;
+}
 .min-height {
-    min-height: 100vh;
+    max-height: 120rem;
 }
 
 ul li img {
@@ -73,9 +77,9 @@ button:hover{
     border: 0.1rem solid rgba(185, 185, 185, 0.479);
 }
 
-.inicio {
+.icinio{
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     flex-flow: column wrap;
 }
 
@@ -85,7 +89,7 @@ button:hover{
     width: 50rem;
     position: absolute;
     margin-left: 50rem;
-    margin-top: 15rem
+    margin-top: -40rem
 }
 
 .cat {
@@ -97,4 +101,94 @@ button:hover{
 }
 .inicio h1{
     margin-top: 25rem;
+}
+nav{
+    position: fixed;
+    z-index: 2;
+}
+.img-ong img{
+    height: 20rem;
+    width: 35rem;
+    background-color: #fedb5d73;
+    margin-left: 3rem;   
+}
+.img-ong{
+    display: flex;
+    justify-content: center;
+
+}
+.sobre{
+    margin-top: 10rem;
+
+}
+.margin-top{
+    margin-top: 15rem;
+    height: 10rem;
+    width: auto;
+}
+.sobre h1{
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+}
+.sobre .img-ong{
+    margin-bottom: 8rem;
+}
+.background-transp {
+    background-color:rgba(128, 128, 128, 0.363);
+    height: 75rem;
+    width: 105rem;
+    padding: 10rem;
+    border-radius: 4rem;
+
+}
+
+.card{
+    background-color: rgba(240, 248, 255, 0.219);
+    height: 45rem;
+    width: 30rem;
+    margin: 5rem;
+    padding-top: 4rem;
+    padding-left: 7rem;
+    border-radius: 3rem;
+    
+
+}
+.card-circle {
+    height: 15rem;
+    width: 15rem;
+    background-color:#1f3f3d52;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+    
+
+
+}
+.card p{
+    font-size: 1.5rem;
+     max-width: 30rem;
+     text-align: center;
+     margin-left: -7rem;
+    }
+    .card h2{
+        margin-left:  -7.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        
+    }
+    
+
+
+ .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-flow: column wrap;
+
+}
+.main-title::after{
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 70px;
+    background-color: #FEDB5D;
 }
